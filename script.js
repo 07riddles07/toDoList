@@ -6,9 +6,11 @@ btn.addEventListener("click", list)
 function list() {
   const item = document.createElement("li");
   item.innerText = inputField.value;
+
   if (inputField.value.length === 0) {
     return false;
     }
+
   item.classList.add("toDoAdded");
   toDoContainer.appendChild(item);
   inputField.value = "";
