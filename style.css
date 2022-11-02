@@ -19,10 +19,6 @@ body {
     width: 100%;
 }
 
-.header {
-    margin-bottom: 25px;
-}
-
 h1 {
     font-family: 'Merriweather', serif;
     font-size: 55px;
@@ -30,7 +26,18 @@ h1 {
     letter-spacing: 2px;
     color: #313e50;
     text-shadow: 1.4px 1.4px 2.7px #1dd2af;
+    margin: 0 auto;
+    margin-top: 37px;
+}
 
+.calendar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 35px 0;
+    font-size: 20px;
+    font-style: italic;
+    color: #ceefe8;
+    text-shadow: 1.4px 1.4px 2.7px #313e50;
 }
 
 .inputField {
