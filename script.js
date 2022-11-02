@@ -2,6 +2,19 @@ const inputField = document.querySelector(".inputField");
 const btn = document.querySelector(".btn");
 const toDoContainer = document.querySelector(".toDoContainer");
 
+const lang = navigator.language; // определяет язык браузера
+let date = new Date(); 
+let dayNumber = date.getDate(); 
+let month = date.getMonth(); // получение месяца
+let dayName = date.toLocaleString(lang,{weekday: 'long' }); // получения названия дня недели
+let monthName = date.toLocaleString(lang,{ month: 'long' }); // получение названия месяца
+let year = date.getFullYear(); // получение текущего года  
+
+let displayDate = `${dayName}, 
+${monthName} ${dayNumber}, ${year}`;
+
+document.getElementById('monthName').innerHTML= displayDate;
+
 btn.addEventListener("click", list) 
 function list() {
   const item = document.createElement("li");
